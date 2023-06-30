@@ -1,0 +1,13 @@
+def find_disjoint_nums(nums1, nums2):
+    set1 = set(nums1)
+    set2 = set(nums2)
+    
+    distinct_nums1 = set1 - set2
+    distinct_nums2 = set2 - set1
+    
+    return [list(distinct_nums1), list(distinct_nums2)]
+#example
+nums1 = [1, 2, 3]
+nums2 = [2, 4, 6]
+result = find_disjoint_nums(nums1, nums2)
+print(result)
